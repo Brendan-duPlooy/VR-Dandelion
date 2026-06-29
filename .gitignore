@@ -23,3 +23,6 @@ Assets/AssetStoreTools*
 
 .DS_Store
 Thumbs.db
+
+*.sln
+*.slnx
