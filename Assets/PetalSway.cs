@@ -5,7 +5,7 @@ public class PetalSway : MonoBehaviour
     private Transform center;
 
     [Header("Spring Settings")]
-    [SerializeField] private float springStrength = 20f;
+    [SerializeField] private float springStrength = 40f;
     [SerializeField] private float damping = 5f;
     [SerializeField] private float movementInfluence = 0.0005f;
 

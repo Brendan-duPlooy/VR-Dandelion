@@ -66,34 +66,61 @@ public class DandelionBloom : MonoBehaviour
 
     void Update()
     {
-        if (
-            !hasBloomed &&
-            Keyboard.current != null &&
-            Keyboard.current.spaceKey.wasPressedThisFrame
-        )
-        {
-            hasBloomed = true;
-            StartCoroutine(BloomRoutine());
-        }
+        //Removed Update() Listening functionality, to new files which reference functions in this file now
+        // if (
+        //     !hasBloomed &&
+        //     Keyboard.current != null &&
+        //     Keyboard.current.spaceKey.wasPressedThisFrame
+        // )
+        // {
+        //     hasBloomed = true;
+        //     StartCoroutine(BloomRoutine());
+        // }
 
-        if (
-            hasBloomed &&
-            !hasBlownAway &&
-            Keyboard.current != null &&
-            Keyboard.current.enterKey.wasPressedThisFrame
-        )
-        {
-            hasBlownAway = true;
-            BlowAway();
-        }
+        // if (
+        //     hasBloomed &&
+        //     !hasBlownAway &&
+        //     Keyboard.current != null &&
+        //     Keyboard.current.enterKey.wasPressedThisFrame
+        // )
+        // {
+        //     hasBlownAway = true;
+        //     BlowAway();
+        // }
 
-        if (
-            Keyboard.current != null &&
-            Keyboard.current.backspaceKey.wasPressedThisFrame
-        )
-        {
-            ResetDandelion();
-        }
+        // if (
+        //     Keyboard.current != null &&
+        //     Keyboard.current.backspaceKey.wasPressedThisFrame
+        // )
+        // {
+        //     ResetDandelion();
+        // }
+    }
+
+    public void BloomFlower()
+    {
+        if (hasBloomed)
+            return;
+
+        hasBloomed = true;
+        StartCoroutine(BloomRoutine());
+    }
+
+    public void BlowFlower()
+    {
+        if (!hasBloomed)
+            return;
+
+        if (hasBlownAway)
+            return;
+
+        hasBlownAway = true;
+        BlowAway();
+    }
+
+    public void ResetFlower()
+    {
+        ResetDandelion();
     }
 
     void CachePetals()

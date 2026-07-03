@@ -5073,7 +5073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &606143635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5754,11 +5754,11 @@ Transform:
   m_GameObject: {fileID: 662835599}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
-  m_LocalPosition: {x: -0.0597, y: 1.233, z: 1.8978}
-  m_LocalScale: {x: 4.970924, y: 6.156692, z: 6.156693}
+  m_LocalPosition: {x: -0.023030002, y: -0.23317993, z: 1.9344499}
+  m_LocalScale: {x: 4.970924, y: 6.1566925, z: 6.1566935}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1416678054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &674826589 stripped
 Transform:
@@ -5869,7 +5869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1999752048}
   m_Colliders: []
   m_InteractionLayers:
     m_Bits: 1
@@ -6083,6 +6083,33 @@ MonoBehaviour:
   resistanceStrength: 0.025
   resistanceBobAmount: 0.002
   resistanceBobSpeed: 8
+--- !u!114 &677875764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677875751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c947f448df8d0fd4da63292d5bc498c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DandelionVRInput
+  bloom: {fileID: 677875763}
+  grabInteractable: {fileID: 677875755}
+--- !u!114 &677875765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677875751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97412366922711d40a8748c2bbdc9748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DandelionKeyboardInput
+  bloom: {fileID: 677875763}
 --- !u!4 &678860512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4711793419370184510, guid: 4dbf2effd83b10940909bbeae7d82764, type: 3}
@@ -8579,12 +8606,36 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 226602743279498102, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 301795087161766040, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 658028464602686504, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 740321021263705560, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -8718,7 +8769,10 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 662835600}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
@@ -10238,6 +10292,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b53a84d7f7ecafe48aa5f426b54a970f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 677875763}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b53a84d7f7ecafe48aa5f426b54a970f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 677875765}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b53a84d7f7ecafe48aa5f426b54a970f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 677875764}
   m_SourcePrefab: {fileID: 100100000, guid: b53a84d7f7ecafe48aa5f426b54a970f, type: 3}
 --- !u!4 &1288987237 stripped
 Transform:
@@ -11128,6 +11188,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!4 &1416678054 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1025889756}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1417129834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11307,7 +11372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1443181145
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14700,6 +14765,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4711793419370184510, guid: 4dbf2effd83b10940909bbeae7d82764, type: 3}
   m_PrefabInstance: {fileID: 1808418890}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1999752047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1999752049}
+  - component: {fileID: 1999752048}
+  m_Layer: 0
+  m_Name: XR Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1999752048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999752047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+--- !u!4 &1999752049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999752047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19142744, y: 1.2133516, z: 2.143086}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2000735725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16077,10 +16188,10 @@ SceneRoots:
   - {fileID: 1025889756}
   - {fileID: 606143640}
   - {fileID: 813066002}
-  - {fileID: 662835600}
   - {fileID: 1285579964}
   - {fileID: 60426128}
   - {fileID: 769728274}
   - {fileID: 1051459677}
   - {fileID: 602282087}
   - {fileID: 1443181150}
+  - {fileID: 1999752049}
