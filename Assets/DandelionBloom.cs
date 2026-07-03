@@ -311,7 +311,7 @@ public class DandelionBloom : MonoBehaviour
         }
 
         Vector3 windDir =
-            (center.position - windDirection.position).normalized;
+            (windDirection.position - center.position).normalized;
 
         float minDot = float.MaxValue;
         float maxDot = float.MinValue;
@@ -382,7 +382,7 @@ public class DandelionBloom : MonoBehaviour
             yield break;
 
         Vector3 windDir =
-            (center.position - windDirection.position).normalized;
+            (windDirection.position - center.position).normalized;
 
         Vector3 attachedPosition =
             petal.transform.position;
