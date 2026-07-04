@@ -14660,7 +14660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PetalSway
   springStrength: 20
   damping: 5
-  movementInfluence: 0.0005
+  movementInfluence: 0.0008
 --- !u!1 &8733120754284847027
 GameObject:
   m_ObjectHideFlags: 0
